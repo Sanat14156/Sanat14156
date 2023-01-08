@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            height: 444px;
+            background-image: url(image/81f3ff974d82520780078ba1cfbd453a1583259680.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
+            position: relative;
+        }
+
+        nav {
+            display: inline-block;
+            position: absolute;
+            left: 786px;
+            padding-top: 12px;
+
+        }
+
+        .getapp {
+            color: white;
+            height: 20px;
+            width: 100px;
+            display: inline-block;
+            position: absolute;
+            left: 225px;
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .getapp a{
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            margin: 15px;
+            list-style-type: none;
+
+        }
+
+       nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .zomato {
+            height: 80px;
+            width: 300px;
+            /* background-color: aqua; */
+            background-image: url(image/8313a97515fcb0447d2d77c276532a511583262271.avif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 600px;
+            top: 100px;
+
+        }
+
+        .discover {
+            /* background-color: aqua; */
+            width: 700px;
+            font-size: 35px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+        }
+
+        form {
+            background-color: rgb(253, 253, 253);
+            width: 760px;
+            height: 60px;
+            
+            padding: 3px 20px;
+            border-radius: 10px;
+            position: absolute;
+            top: 275px;
+            left: 360px;
+        }
+
+        .input1 {
+            height: 52px;
+            width: 310px;
+            font-size: 20px;
+            /* border-radius:10px; */
+            /* padding-left: 30px; */
+            padding: 10px 30px;
+            border: 0px;
+            outline: none;
+            border-right: 1px solid rgb(194, 192, 192);
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            /* border-top-right-radius: 10%; */
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        .input2 {
+            height: 52px;
+            width: 460px;
+            font-size: 20px;
+            border-radius: 10px;
+            padding-left: 40px;
+            border: 0px;
+            outline: none;
+            border-left: 2px solid gray;
+            position: absolute;
+            left: 300px;
+
+
+        }
+
+        section {
+            /* background-color: aqua; */
+            height: 330px;
+            width: 1100px;
+            margin: auto;
+            padding-top: 40px;
+            position: relative;
+            /* display: inline-block; */
+        }
+
+        .image1 {
+            /* background-color: aquamarine; */
+            height: 240px;
+            width: 352px;
+            border: 1px solid rgb(233, 229, 229);
+            border-radius: 12px;
+            /* display: inline-block; */
+            position: absolute;
+        }
+        .image1:hover{
+            transform: scale(1.1,1.1);
+
+        }
+
+        .img1 {
+            /* background-color: blueviolet; */
+            height: 66%;
+            background-image: url(image/img1.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -60px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+
+
+        }
+
+        .text1 {
+            /* background-color: brown; */
+            height: 18%;
+            width: 350px;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            position: absolute;
+            bottom: 36px;
+
+        }
+
+        .text11 {
+            /* background-color: rgb(117, 68, 9); */
+            height: 12%;
+            width: 350px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            position: absolute;
+            bottom: 6px;
+        }
+
+        .image2 {
+            /* background-color: aquamarine; */
+            height: 240px;
+            width: 352px;
+            border: 1px solid rgb(233, 229, 229);
+            border-radius: 12px;
+            display: inline-block;
+            margin-left: 12px;
+            position: absolute;
+            left: 361px;
+
+
+        }
+        .image2:hover{
+            transform: scale(1.1,1.1);
+        }
+
+        .img2 {
+            /* background-color: blueviolet; */
+            height: 65%;
+            background-image: url(image/img2.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -60px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+
+        }
+
+        .text2 {
+            /* background-color: brown; */
+            height: 18%;
+            width: 350px;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            position: absolute;
+            bottom: 36px;
+        }
+
+        .text22 {
+            /* background-color: rgb(117, 68, 9); */
+            height: 12%;
+            width: 350px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            position: absolute;
+            bottom: 6px;
+
+        }
+
+        .image3 {
+            /* background-color: aquamarine; */
+            height: 240px;
+            width: 352px;
+            border: 1px solid rgb(233, 229, 229);
+            border-radius: 12px;
+            display: inline-block;
+            margin-left: 12px;
+            position: absolute;
+            right: 0px;
+        }
+        .image3:hover{
+            transform: scale(1.1,1.1);
+
+        }
+
+        .img3 {
+            /* background-color: blueviolet; */
+            height: 65%;
+            background-image: url(image/img3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -60px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .text3 {
+            /* background-color: brown; */
+            height: 18%;
+            width: 350px;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            position: absolute;
+            bottom: 36px;
+        }
+
+        .text33 {
+            /* background-color: rgb(117, 68, 9); */
+            height: 12%;
+            width: 350px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 10px;
+            position: absolute;
+            bottom: 6px;
+
+        }
+
+        .collection {
+            /* background-color: rgb(0, 255, 30); */
+            height: 500px;
+            width: 1100px;
+            margin: auto;
+            padding-top: 30px;
+            position: relative;
+        }
+
+        .collection1 {
+            /* background: rgb(194, 7, 7); */
+            height: 12%;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .collection2 {
+            /* background-color: aquamarine; */
+            height: 10%;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .collection3 {
+            /* background-color: rgb(142, 112, 112); */
+            height: 75%;
+            position: relative;
+
+        }
+
+        .collection-pic1 {
+            /* background-color: blueviolet; */
+            background-image: url(image/collection1pic.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -105px 0px;
+            border-radius: 10px;
+            display: inline-block;
+            height: 90%;
+            width: 24.2%;
+            position: absolute;
+            left: 0px;
+        }
+
+        .pic1name {
+            /* background-color: rgb(57, 37, 8); */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 83%;
+            left: 15px;
+        }
+
+        .pic1place {
+            /* background-color: aquamarine; */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 91%;
+            left: 15px;
+        }
+
+        .collection-pic2 {
+            /* background-color: blueviolet; */
+            background-image: url(image/collection2pic.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -90px 0px;
+            border-radius: 10px;
+            display: inline-block;
+            height: 90%;
+            width: 24.2%;
+            margin-left: 0px;
+            position: absolute;
+            left: 278px;
+        }
+
+        .pic2name {
+            /* background-color: rgb(57, 37, 8); */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 83%;
+            left: 15px;
+
+        }
+
+        .pic2place {
+            /* background-color: aquamarine; */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 91%;
+            left: 15px;
+
+        }
+
+        .collection-pic3 {
+            /* background-color: blueviolet; */
+            background-image: url(image/collection333.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -22px 0px;
+            border-radius: 10px;
+
+            display: inline-block;
+            height: 90%;
+            width: 24.2%;
+            margin-left: 0px;
+            position: absolute;
+            right: 278px;
+        }
+
+        .pic3name {
+            /* background-color: rgb(57, 37, 8); */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 83%;
+            left: 15px;
+
+        }
+
+        .pic3place {
+            /* background-color: aquamarine; */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 91%;
+            left: 15px;
+
+        }
+
+        .collection-pic4 {
+            /* background-color: blueviolet; */
+            background-image: url(image/collection4pic.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -100px 0px;
+            border-radius: 10px;
+            display: inline-block;
+            height: 90%;
+            width: 24.2%;
+            margin-left: 0px;
+            position: absolute;
+            right: 0px;
+        }
+
+        .pic4name {
+            /* background-color: rgb(57, 37, 8); */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 83%;
+            left: 15px;
+
+        }
+
+        .pic4place {
+            /* background-color: aquamarine; */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 91%;
+            left: 15px;
+
+        }
+
+        .localities {
+            /* background-color: blue; */
+            height: 500px;
+            position: relative;
+        }
+
+        .popular {
+            /* background-color: aqua; */
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .places {
+            /* background-color: beige; */
+            height: 85%;
+        }
+
+        .placeline1 {
+            /* background-color: blueviolet; */
+            height: 85px;
+            width: 100%;
+            position: absolute;
+            top: 28%;
+
+        }
+        .line11:hover {
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line12:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line13:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line21:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line22:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line23:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line31:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line32:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+        .line33:hover{
+            box-shadow: 0px 5px 10px 1px rgb(186, 182, 182);
+        }
+
+        .placeline2 {
+            /* background-color: blueviolet; */
+            height: 85px;
+            width: 100%;
+            position: absolute;
+            top: 49%;
+        }
+
+        .placeline3 {
+            /* background-color: blueviolet; */
+            height: 85px;
+            width: 100%;
+            position: absolute;
+            top: 70%;
+
+        }
+
+        .line11,
+        .line12,
+        .line13 {
+            /* background-color: rgb(31, 185, 133); */
+            height: 100%;
+            width: 32%;
+            border-radius: 10px;
+            border: 1px solid rgb(230, 227, 227);
+            display: inline-block;
+            position: absolute;
+        }
+
+        .cp,
+        .sector,
+        .sector18,
+        .raj,
+        .saket,
+        .dlf,
+        .golf,
+        .dlfp {
+            /* background-color: azure; */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+
+        .cp1,
+        .sector1,
+        .sector181,
+        .raj1,
+        .saket1,
+        .dlf1,
+        .golf1,
+        .dlfp1 {
+            /* background-color: bisque; */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+        .cp2,
+        .sector2,
+        .sector182,
+        .raj2,
+        .saket2,
+        .dlf2,
+        .golf2,
+        .dlfp2 {
+            /* background-color: rgb(197, 121, 28); */
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 32px;
+            right: 20px;
+        }
+
+        .line12 {
+            left: 34%;
+        }
+
+        .line13 {
+            right: 0px;
+        }
+
+        .line21,
+        .line22,
+        .line23 {
+            /* background-color: rgb(31, 185, 133); */
+            height: 100%;
+            width: 32%;
+            border-radius: 10px;
+            border: 1px solid rgb(235, 233, 233);
+            display: inline-block;
+            position: absolute;
+        }
+
+        .line22 {
+            left: 34%;
+        }
+
+        .line23 {
+            right: 0px;
+        }
+
+        .line31,
+        .line32,
+        .line33 {
+            /* background-color: rgb(31, 185, 133); */
+            height: 100%;
+            width: 32%;
+            border-radius: 10px;
+            border: 1px solid rgb(230, 227, 227);
+            display: inline-block;
+            position: absolute;
+        }
+
+        .line32 {
+            left: 34%;
+        }
+
+        .line33 {
+            right: 0px;
+        }
+
+        .see {
+            /* background-color: azure; */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 30px;
+            left: 110px;
+        }
+
+        .see1 {
+            /* background-color: azure; */
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 30px;
+            left: 230px;
+        }
+
+        .getzapp {
+            background-color: rgb(249, 249, 222);
+            height: 500px;
+            width: 100%;
+            position: relative;
+        }
+
+        .mobile {
+            /* background-color: aquamarine; */
+            height: 60%;
+            width: 18%;
+            background-image: url(image/getzomatoappimg.avif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 30%;
+            left: 24%;
+        }
+
+        .login {
+            /* background-color: brown; */
+            height: 90%;
+            width: 32%;
+            position: absolute;
+            left: 45%;
+        }
+
+        .getzapp1 {
+            /* background-color: aqua; */
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 12%;
+
+        }
+
+        .getzapp2 {
+            /* background-color: yellowgreen; */
+            font-size: 18px;
+            line-height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 28%;
+        }
+
+        .getzapp3 {
+            /* background-color: aqua; */
+            height: 120px;
+            width: 100%;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+        }
+
+        .email {
+            /* background-color: aquamarine; */
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            top: 32%;
+            left: 0px;
+        }
+
+        .submit {
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 50px;
+            width: 30%;
+            text-align: center;
+            border-radius: 5px;
+
+            padding: 15px 5px;
+            position: absolute;
+            top: 0px;
+            right: 15px;
+
+        }
+
+        .input3 {
+            height: 50px;
+            width: 65%;
+            font-size: 20px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid rgb(225, 221, 221);
+
+        }
+
+        .radio1,
+        .radio2,
+        .playstore,
+        .applestore {
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .radio1 {
+            position: absolute;
+        }
+
+        .radio2 {
+            position: absolute;
+            left: 30%;
+        }
+
+        .download {
+            /* background-color: aqua; */
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 77%;
+        }
+
+        .downloadapp {
+            /* background-color: aquamarine; */
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            top: 85%;
+        }
+
+        .playstore {
+            height: 50px;
+            width: 30%;
+            background-image: url(image/playstore.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+
+        .applestore {
+            height: 50px;
+            width: 30%;
+            background-image: url(image/applestore.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 15px;
+
+        }
+
+        .explore {
+            /* background-color: aqua; */
+            height: 500px;
+        }
+
+        .option {
+            /* background-color: blue; */
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .option1,
+        .option2,
+        .option3,
+        .option4 {
+            /* background-color: blanchedalmond; */
+            height: 70px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 22px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(234, 233, 233);
+        }
+
+        .footer {
+            background-color: rgb(239, 239, 242);
+            height: 500px;
+            position: relative;
+        }
+
+        .zom {
+            /* background-color: blueviolet; */
+            height: 450px;
+            width: 1100px;
+            border-bottom: 1px solid rgb(199, 196, 196);
+            margin: auto;
+            padding-top: 40px;
+            position: relative;
+
+        }
+
+        .z {
+            height: 50px;
+            /* background-color: aquamarine; */
+            position: absolute;
+            width: 100%;
+        }
+
+        .zomatoo,
+        .india,
+        .english {
+            position: absolute;
+        }
+
+        .zomatoo {
+            top: 5px;
+            background-image: url(image/smallZomato.avif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 30px;
+            width: 18%;
+
+        }
+        .z a:nth-of-type(1) div div{
+            height: 20px;
+            width: 20px;
+            background-image: url(image/116_Ensign_Flag_Nation_india-512.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left:8px;
+            top: 9px;
+        }
+
+        .india {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: rgb(200, 158, 240); */
+            border-radius: 5px;
+            border: 1px solid rgb(168, 167, 167);
+            padding-top: 6px;
+            text-align: center;
+            height: 40px;
+            width: 10%;
+            right: 13%;
+
+        }
+        .z a:nth-of-type(2) div div{
+            height: 20px;
+            width: 20px;
+            background-image: url(image/globe.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left:8px;
+            top: 10px;
+        }
+
+        .english {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: rgb(200, 158, 240); */
+            border-radius: 5px;
+            border: 1px solid rgb(168, 167, 167);
+            padding-top: 8px;
+            padding-right: 10px;
+            text-align: right;
+            height: 40px;
+            width: 10%;
+            right: 0%;
+
+        }
+        .country{
+            background-color: rgb(225, 228, 228);
+            height: 200px;
+            display: none;
+            /* width: 100px; */
+            border-radius: 10px;
+            padding: 5px 10px;
+            position: absolute;
+            right: 0%;
+            bottom: 40px;
+        }
+        .country a{
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .english:hover .country{
+         display: block;
+       }
+            
+
+        .row1,.row2,.row3,.row4,.row5{
+            height: 250px;
+            width: 200px;
+            font-size: 18px;
+            position: absolute;
+            top: 25%;
+
+            /* background-color: brown; */
+        }
+        .row1 p{
+            margin-top: 10px;
+            color: rgb(154, 151, 151);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row2{
+            left: 21%;
+        }
+        .row2 p{
+            margin-top: 10px;
+            color: rgb(146, 144, 144);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row3{
+            left: 39%;
+        }
+        .row3 p{
+            margin-top: 10px;
+            color: rgb(145, 143, 143);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row4{
+            left: 62%;
+        }
+        .row4 p{
+            margin-top: 10px;
+            color: rgb(157, 155, 155);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .row5{
+            right: 2%;
+        }
+        .row1 a{
+            text-decoration: none;
+        }
+        .row2 a{
+            text-decoration: none;
+        }
+        .row3 a{
+            text-decoration: none;
+        }
+        .row4 a{
+            text-decoration: none;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
+        .row5 a:nth-of-type(1) div {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(254, 255, 255);
+            background-image: url(image/Circled_Linkedin_svg-512.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 15%;
+            left: 0px;
+        }
+        .row5 a:nth-of-type(2) div{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(250, 250, 250);
+            background-image: url(image/Circled_Instagram_svg-512.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 15%;
+            left: 20%;
+        }
+        .row5 a:nth-of-type(3) div{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(249, 254, 254);
+            background-image: url(image/Circled_Twitter_svg-512.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 15%;
+            left: 40%;
+        }
+        .row5 a:nth-of-type(4) div{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(252, 254, 254);
+            background-image: url(image/Circled_Youtube_svg-512.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 15%;
+            left: 60%;
+        }
+        .row5 a:nth-of-type(5) div{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(251, 252, 252);
+            background-image: url(image/Circled_Facebook_svg-512.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 15%;
+            right: 5%;
+        }
+        .row5 a:nth-of-type(6) div{
+            height: 100px;
+            width: 150px;
+            /* background-color: rgb(254, 255, 255); */
+            background-image: url(image/applestore.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 5%;
+            position: absolute;
+            top: 35%;
+            left: 0px;
+
+        }
+        .row5 a:nth-of-type(7) div{
+            height: 100px;
+            width: 150px;
+            /* background-color: rgb(254, 255, 255); */
+            background-image: url(image/playstore.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 5%;
+            position: absolute;
+            top: 60%;
+            left: 0px;
+        }
+
+        
+    </style>
+
+<body>
+    <header>
+        <div class="getapp"><a href="">Get the App</a></div>
+        <nav>
+            <ul>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Add resturent</a></li>
+                <li><a href="">Log in</a></li>
+                <li><a href="">Sign up</a></li>
+            </ul>
+        </nav>
+
+        <div class="zomato"></div>
+        <div class="discover">Discover the best food & drinks in Delhi NCR</div>
+        <form>
+            <input type="text" placeholder="Enter your location" list="city" class="input1">
+            <datalist id="city">
+                <option value="Delhi">Delhi</option>
+                <option value="Dehradhun">Dehradhun</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Vrindavan">Vrindavan</option>
+                <option value="Bangla Sahib Lane">Bangla Sahib Lane</option>
+            </datalist>
+            <input type="text" placeholder="Search for resturent, cuisine or a dish" class="input2">
+        </form>
+    </header>
+    <section>
+        <div class="section">
+            <a href=""><div class="image1">
+                <div class="img1"></div>
+                <div class="text1">Order Online</div>
+                <div class="text11">Stay home and order to your doorstep</div>
+            </div></a>
+            <a href=""><div class="image2">
+                <div class="img2"></div>
+                <div class="text2">Dining</div>
+                <div class="text22">View the city's favourite dining venues</div>
+            </div></a>
+            <a href=""><div class="image3">
+                <div class="img3"></div>
+                <div class="text3">Nightlifes and Clubs</div>
+                <div class="text33">Explore the city’s top nightlife outlets</div>
+            </div></a>
+        </div>
+    </section>
+    <section class="collection">
+        <div class="collection1">Collections</div>
+        <div class="collection2">Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on
+            trends</div>
+        <div class="collection3">
+            <a href="">
+                <div class="collection-pic1">
+                    <div class="pic1name">Insta-worthy Places</div>
+                    <div class="pic1place">16 Places</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="collection-pic2">
+                    <div class="pic2name">Lit Saturday Night</div>
+                    <div class="pic2place">9 Places</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="collection-pic3">
+                    <div class="pic3name">New in Town</div>
+                    <div class="pic3place">17 places</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="collection-pic4">
+                    <div class="pic4name">Romantic Dining</div>
+                    <div class="pic4place">14 Places</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="localities">
+        <div class="popular">Popular localities in and around Delhi NCR</div>
+        <div class="places">
+            <div class="placeline1">
+                <a href=""><div class="line11">
+                    <div class="cp">Connaught Place</div>
+                    <div class="cp1">238 places</div>
+                    <div class="cp2">></div>
+                </div></a>
+                <a href=""><div class="line12">
+                    <div class="sector">Sector 29</div>
+                    <div class="sector1">133 places</div>
+                    <div class="sector2">></div>
+                </div></a>
+                <a href=""><div class="line13">
+                    <div class="sector18">Sector 18, Noida</div>
+                    <div class="sector181">189 places</div>
+                    <div class="sector182">></div>
+                </div></a>
+            </div>
+            <div class="placeline2">
+                <a href=""><div class="line21">
+                    <div class="raj">Rajouri Garden</div>
+                    <div class="raj1">255 places</div>
+                    <div class="raj2">></div>
+                </div></a>
+                <a href=""><div class="line22">
+                    <div class="saket">Saket</div>
+                    <div class="saket1">294 places</div>
+                    <div class="saket2">></div>
+                </div></a>
+                <a href=""><div class="line23">
+                    <div class="dlf">DLF Cyber City</div>
+                    <div class="dlf1">139 places</div>
+                    <div class="dlf2">></div>
+                </div></a>
+            </div>
+            <div class="placeline3">
+                <a href="">
+                    <div class="line31">
+                        <div class="golf">Golf Course Road</div>
+                        <div class="golf1">146 places</div>
+                        <div class="golf2">></div>
+                    </div>
+                </a>
+                <a href=""><div class="line32">
+                    <div class="dlfp">DLF Phase 4</div>
+                    <div class="dlfp1">204 places</div>
+                    <div class="dlfp2">></div>
+                </div></a>
+                <div class="line33">
+                    <a href=""><div class="see">See More</div>
+                        <div class="see1">v</div></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="getzapp">
+        <div class="mobile"></div>
+        <div class="login">
+            <div class="getzapp1">Get the Zomato app</div>
+            <div class="getzapp2">We will send you a link, open it on your phone to download the app</div>
+            <div class="form">
+                <form class="getzapp3">
+                    <label for="1">
+                        <div class="radio1"><input type="radio" name="email"> Email </div>
+                        <div class="radio2"><input type="radio" name="email"> Phone</div>
+                    </label>
+                    <div class="email"><input type="email" class="input3" id="1">
+                        <Button:submit>
+                           <a href=""><div class="submit">Share App Link</div></a>
+                        </Button:submit>
+                    </div>
+
+                </form>
+            </div>
+            <div class="download">Download app from</div>
+            <div class="downloadapp">
+                <a href=""><div class="playstore"></div></a>
+                <a href=""><div class="applestore"></div></a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="option">Explore options near me</div>
+        <div class="option1">
+            <details>
+                <summary>Popular cuisines near me</summary>
+                Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near
+                meContinental food near meDesserts food near meItalian food near meKebab food near meMithai food near
+                meMomos food near meMughlai food near meNorth Indian food near mePasta food near mePizza food near
+                meRolls food near meSandwich food near meShake food near meSouth Indian food near meStreet food near me
+            </details>
+        </div>
+        <div class="option2">
+            <details>
+                <summary>Popular restaurent types near me</summary>
+            </details>
+        </div>
+        <div class="option3">
+            <details>
+                <summary>Top Restaurant Chains</summary>
+            </details>
+        </div>
+        <div class="option4">
+            <details>
+                <summary>Cities We Deliver To</summary>
+            </details>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="zom">
+            <div class="z">
+                <div class="zomatoo"></div>
+                <a href=""><div class="india"><div></div> India</div></a>
+                <a href=""><div class="english">
+                    <div class="country"><a href="">
+                        <p>English</p>
+                    </a><a href="">
+                        <p>हिन्दी</p>
+                    </a><a href="">
+                        <p>Polish</p>
+                    </a><a href="">
+                        <p>Vietnamese</p>
+                    </a><a href="">
+                        <p>Indonesian</p>
+                    </a><a href="">
+                        <p>Português</p>
+                    </a><a href="">
+                        <p>Franch</p>
+                    </a></div><div></div> English</div></a>
+            </div>
+            
+            
+            <div class="row1">
+                <h3>ABOUT ZOMATO</h3>
+                <a href="">
+                    <p>Who We Are</p>
+                </a><a href="">
+                    <p>Blog</p>
+                </a><a href="">
+                    <p>Work With Us</p>
+                </a><a href="">
+                    <p>Investor Relations</p>
+                </a><a href="">
+                    <p>Report Fraud</p>
+                </a><a href="">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div class="row2">
+                <h3>ZOMAVERSE</h3>
+                <a href="">
+                    <p>Zomato</p>
+                </a><a href="">
+                    <p>Blinkit</p>
+                </a><a href="">
+                    <p>Feeding India</p>
+                </a><a href="">
+                    <p>Hyperpure</p>
+                </a><a href="">
+                    <p>Zomaland</p>
+                </a>
+            </div>
+            <div class="row3">
+                <h3>FOR RESTAURANTS</h3>
+                <a href="">
+                    <p>Partner With Us</p>
+                </a><a href="">
+                    <p>Apps For You</p>
+                </a>
+                <br><br>
+                <h3>FOR ENTERPRISES</h3>
+                <a href="">
+                    <p>Zomato For Work</p>
+                </a>
+            </div>
+            <div class="row4">
+                <h3>LEARN MORE</h3>
+                <a href="">
+                    <p>Privacy</p>
+                </a><a href="">
+                    <p>Security</p>
+                </a><a href="">
+                    <p>Terms</p>
+                </a><a href="">
+                    <p>Sitemap</p>
+                </a>
+            </div>
+            <div class="row5">
+                <h3>SOCIAL LINKS</h3>
+                <a href="">
+                   <div></div> 
+                </a><a href="">
+                    <div></div>
+                </a><a href="">
+                    <div></div>
+                </a><a href="">
+                    <div></div>
+                </a><a href="">
+                    <div></div>
+                </a><a href="">
+                    <div></div>
+                </a><a href="">
+                    <div></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+    let input=document.getElementsByTagName("input")
+    console.log(input);
+    input[2].addEventListener("click",display);
+    function display(){
+        input[4].setAttribute("placeholder","Email Address");
+    }
+    input[3].addEventListener("click",display1);
+    function display1(){
+        input[4].setAttribute("placeholder","Phone Number");
+    }
+
+    // let share=document.getElementsByTagName("button:submit")
+    // console.log(share);
+    // let user_data=[];
+    // share[0].addEventListener("click",e=>{
+    //    e.preventDefault();
+    //    console.log("shared"); 
+    // //    email=input[4].elements.email.value;
+    //    phone=input[4].email.value;
+    //    user_data.push(phone) ;
+    //    console.log(user_data);
+    // })
+    </script>
+</body>
+
+</html>
